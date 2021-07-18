@@ -1,30 +1,50 @@
-img{
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap');
+
+body {
     width: 996px;
-
+    height: 616;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: aliceblue;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 23px;
-}
-
-
-
-h3{
-    font-family: Arial, Helvetica, sans-serif;
-    color:red;
-    text-align: center;
-
-}
 
 p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    color: black;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 2/ span 4;
+    grid-template-rows: 2fr;
+
+    font-size: x-large;
+    color: darkblue;
+    width: 350px;
+    text-transform: capitalize;
 }
 
-div p{
-    text-align: right;
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    height: 468px;
+}
+
+section .links{
+    grid-column: 1/span 1;
+    grid-row: 1/span 2;
+}
+
+section .texto{
+    grid-column: 2/span 2;
+    grid-row: 1/span 2;
+}
+
+section .videos{
+    display: inline-grid;
+    align-items: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
 }
